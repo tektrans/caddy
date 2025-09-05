@@ -22,6 +22,10 @@ build:
 	make prepare-build
 	podman build $(BUILD_CONTAINER_ARGS) .
 
+push-to-registry:
+	podman push $(LOCAL_TAG):${VERSION} ghcr.io/tektrans/caddy:$(VERSION)
+	podman push $(LOCAL_TAG):${VERSION} ghcr.io/tektrans/caddy:latest
+
 pull-base-image:
 	podman image pull ${BASE_IMAGE}:${VERSION}
 
