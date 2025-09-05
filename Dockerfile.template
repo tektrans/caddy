@@ -1,0 +1,17 @@
+FROM docker.io/caddy:{{VERSION}}-builder AS builder
+
+MAINTAINER Adhidarma Hadiwinoto <adhisimon@tektrans.id>
+
+RUN xcaddy build \
+    --with github.com/caddy-dns/rfc2136
+
+FROM docker.io/library/caddy:{{VERSION}}
+
+COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+
+LABEL \
+  org.opencontainers.image.description="Custom caddyserver container with some modules added" \
+  org.opencontainers.image.url="{{URL}}" \
+  org.opencontainers.image.source="{{URL}}" \
+  org.opencontainers.image.authors="{{MAINTAINER}}" \
+  org.opencontainers.image.vendor="{{VENDOR}}"
