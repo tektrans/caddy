@@ -3,7 +3,8 @@ FROM docker.io/caddy:{{VERSION}}-builder AS builder
 MAINTAINER Adhidarma Hadiwinoto <adhisimon@tektrans.id>
 
 RUN xcaddy build \
-    --with github.com/caddy-dns/rfc2136
+    --with github.com/caddy-dns/rfc2136 \
+    --with github.com/lindenlab/caddy-s3-proxy
 
 FROM docker.io/library/caddy:{{VERSION}}
 
