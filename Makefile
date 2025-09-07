@@ -21,6 +21,7 @@ BUILD_CONTAINER_ARGS=\
 build:
 	make prepare-build
 	podman build $(BUILD_CONTAINER_ARGS) .
+	podman run --rm ${LOCAL_TAG}:${VERSION} caddy list-modules > list-modules.txt
 
 push-to-registry:
 	podman push $(LOCAL_TAG):${VERSION} ghcr.io/tektrans/caddy:$(VERSION)
