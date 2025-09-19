@@ -22,7 +22,7 @@ You can pull latest image by:
 
 Podman:
 ```shell
-podman run ghcr.io/tektrans/caddy:latest
+podman pull ghcr.io/tektrans/caddy:latest
 ```
 
 Docker:
@@ -33,7 +33,7 @@ docker pull ghcr.io/tektrans/caddy:latest
 If you want to lock to specific minor release (recommended, for compability reason), you can use image tag. Example:
 Podman:
 ```shell
-podman run ghcr.io/tektrans/caddy:2.10
+podman pull ghcr.io/tektrans/caddy:2.10
 ```
 
 Docker:
