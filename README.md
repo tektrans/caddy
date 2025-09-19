@@ -52,6 +52,11 @@ docker pull ghcr.io/tektrans/caddy:2.10
 ```
 
 ## How to run it
+This image is just extending original caddy container. You can use it as a drop-in replacement.
+Just replace `docker.io/library/caddy` to `ghcr.io/tektrans/caddy`.
+All steps to run and configure is the same with running and configuring original
+caddy docker container.
+
 Create Caddyfile on your container host, for example at /etc/caddy/Caddyfile. Then run:
 
 ```bash
