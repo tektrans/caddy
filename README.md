@@ -58,6 +58,11 @@ Create Caddyfile on your container host, for example at /etc/caddy/Caddyfile. Th
 podman run --rm --name caddy --tz Asia/Jakarta -p 80:80 -p 443:443 -p 443:443/udp ghcr.io/tektrans/caddy:2.10
 ```
 
+**Note:**
+
+You must run as root (or use *sudo*), because it needs to publish on port 80 and 443 (privilege ports).
+Unless you set it to unprivileges ports and use some port forwarding techniques.
+
 ### Podman quadlet example
 If your system support podman quadlet (indication: there is /etc/containers/systemd directory),
 you can create this file on /etc/containers/systemd/caddy.container.
