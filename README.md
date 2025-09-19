@@ -31,30 +31,30 @@ Container image publish and release publicly on this
 You can pull latest image by:
 
 Podman:
-```shell
+```bash
 podman pull ghcr.io/tektrans/caddy:latest
 ```
 
 Docker:
-```shell
+```bash
 docker pull ghcr.io/tektrans/caddy:latest
 ```
 
 If you want to lock to specific minor release (recommended, for compability reason), you can use image tag. Example:
 Podman:
-```shell
+```bash
 podman pull ghcr.io/tektrans/caddy:2.10
 ```
 
 Docker:
-```shell
+```bash
 docker pull ghcr.io/tektrans/caddy:2.10
 ```
 
 ## How to run it
 Create Caddyfile on your container host, for example at /etc/caddy/Caddyfile. Then run:
 
-```shell
+```bash
 podman run --rm --name caddy --tz Asia/Jakarta -p 80:80 -p 443:443 -p 443:443/udp ghcr.io/tektrans/caddy:2.10
 ```
 
@@ -111,26 +111,26 @@ WantedBy=default.target
 ```
 
 You can start/stop/restart by running:
-```shell
+```bash
 sudo systemctl start caddy.service
 ```
 
-```shell
+```bash
 sudo systemctl stop caddy.service
 ```
 
-```shell
+```bash
 sudo systemctl restart caddy.service
 ```
 
 If you change Caddyfile, you don't need restart this container, just reload the service by:
 
-```shell
+```bash
 sudo systemctl reload caddy.service
 ```
 
 Or if you want to validate your Caddyfile before reloading service:
-```shell
+```bash
 sudo podman exec -ti caddy caddy validate --config=/etc/caddy/Caddyfile
 ```
 
