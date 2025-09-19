@@ -11,6 +11,7 @@ Based on [Caddy2 Docker Official Image](https://hub.docker.com/_/caddy).
   - [How to run it](#how-to-run-it)
     - [Podman quadlet example](#podman-quadlet-example)
   - [Modules added:](#modules-added)
+  - [Other information and how to customize](#other-information-and-how-to-customize)
 
 ## Motivation
 Why we build this custom caddy container?
@@ -129,7 +130,7 @@ sudo systemctl reload caddy.service
 ```
 
 Or if you want to validate your Caddyfile before reloading service:
-```
+```shell
 sudo podman exec -ti caddy caddy validate --config=/etc/caddy/Caddyfile
 ```
 
@@ -140,3 +141,6 @@ sudo podman exec -ti caddy caddy validate --config=/etc/caddy/Caddyfile
   for AWS S3 (and compatible) object store.
 
 See ["list-modules.txt"](./list-modules.txt) to see all of included modules.
+
+## Other information and how to customize
+Please see base/upstream of this image at [Caddy2 Docker Official Image](https://hub.docker.com/_/caddy).
