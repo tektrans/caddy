@@ -1,8 +1,16 @@
-# caddy
+# Custom caddy2 container image build by TEKTRANS
 
 Custom [caddyserver](https://caddyserver.com) container (podman, docker, and so on) with some modules added
 build by [TEKTRANS](https://www.tektrans.id/).
 Based on [Caddy2 Docker Official Image](https://hub.docker.com/_/caddy).
+
+- [Custom caddy2 container image build by TEKTRANS](#custom-caddy2-container-image-build-by-tektrans)
+  - [Motivation](#motivation)
+  - [Repository](#repository)
+  - [How to pull](#how-to-pull)
+  - [How to run it](#how-to-run-it)
+    - [Podman quadlet example](#podman-quadlet-example)
+  - [Modules added:](#modules-added)
 
 ## Motivation
 Why we build this custom caddy container?
