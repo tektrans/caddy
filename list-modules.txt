@@ -129,9 +129,10 @@ tls.stek.standard
   Standard modules: 127
 
 caddy.fs.s3
+caddy.storage.redis
 dns.providers.rfc2136
 http.handlers.s3proxy
 
-  Non-standard modules: 3
+  Non-standard modules: 4
 
   Unknown modules: 0

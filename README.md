@@ -149,6 +149,9 @@ sudo podman exec -ti caddy caddy validate --config=/etc/caddy/Caddyfile
 - [s3-proxy](https://github.com/lindenlab/caddy-s3-proxy), allow to proxy request directly from S3.
 - [caddy-fs-s3](https://github.com/sagikazarmark/caddy-fs-s3), provides virtual filesystem module
   for AWS S3 (and compatible) object store.
+- [caddy-storage-redis](https://github.com/pberkel/caddy-storage-redis),
+  implements a Caddy storage backend for Redis,
+  it supports Single (Standalone), Cluster, or Sentinel (Failover) Redis server configurations.
 
 See ["list-modules.txt"](./list-modules.txt) to see all of included modules.
 
