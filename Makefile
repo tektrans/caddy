@@ -11,7 +11,6 @@ BUILD_CONTAINER_ARGS=\
 	$(PODMAN_ARGS) $(PODMAN_BUILD_ARGS) \
 	--annotation=org.opencontainers.image.description="${DESCRIPTION}" \
 	--annotation=org.opencontainers.image.version="${VERSION}" \
-	--annotation=org.opencontainers.image.revision="${REVISION}" \
 	--annotation=org.opencontainers.image.url="${URL}" \
 	--annotation=org.opencontainers.image.source="${URL}" \
 	--annotation=org.opencontainers.image.authors="${MAINTAINER}" \
