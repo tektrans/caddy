@@ -16,6 +16,7 @@ caddy.logging.encoders.filter.cookie
 caddy.logging.encoders.filter.delete
 caddy.logging.encoders.filter.hash
 caddy.logging.encoders.filter.ip_mask
+caddy.logging.encoders.filter.multi_regexp
 caddy.logging.encoders.filter.query
 caddy.logging.encoders.filter.regexp
 caddy.logging.encoders.filter.rename
@@ -31,6 +32,7 @@ caddy.network_proxy.url
 caddy.storage.file_system
 events
 http
+http.authentication.hashes.argon2id
 http.authentication.hashes.bcrypt
 http.authentication.providers.http_basic
 http.encoders.gzip
@@ -126,7 +128,7 @@ tls.permission.http
 tls.stek.distributed
 tls.stek.standard
 
-  Standard modules: 127
+  Standard modules: 129
 
 caddy.fs.s3
 caddy.storage.redis
@@ -134,5 +136,3 @@ dns.providers.rfc2136
 http.handlers.s3proxy
 
   Non-standard modules: 4
-
-  Unknown modules: 0
