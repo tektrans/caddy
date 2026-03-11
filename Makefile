@@ -1,6 +1,6 @@
 LOCAL_TAG := localhost/caddy
 BASE_IMAGE := docker.io/library/caddy
-VERSION := 2.10
+VERSION := 2.11
 
 DESCRIPTION := Custom caddyserver container with some modules added
 VENDOR := TEKTRANS
