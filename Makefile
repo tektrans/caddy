@@ -35,11 +35,11 @@ prepare-build:
 	make pull-base-image
 
 Dockerfile: Makefile Dockerfile.template
-	jinja \
-		-D BASE_IMAGE "${BASE_IMAGE}" \
-		-D VERSION "${VERSION}" \
-		-D VENDOR "${VENDOR}" \
-		-D DESCRIPTION "${DESCRIPTION}" \
-		-D MAINTAINER "${MAINTAINER}" \
-		-D URL "${URL}" \
+	minijinja-cli \
+		-D BASE_IMAGE="${BASE_IMAGE}" \
+		-D VERSION="${VERSION}" \
+		-D VENDOR="${VENDOR}" \
+		-D DESCRIPTION="${DESCRIPTION}" \
+		-D MAINTAINER="${MAINTAINER}" \
+		-D URL="${URL}" \
 		Dockerfile.template > Dockerfile
