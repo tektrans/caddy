@@ -21,6 +21,7 @@ caddy.logging.encoders.filter.query
 caddy.logging.encoders.filter.regexp
 caddy.logging.encoders.filter.rename
 caddy.logging.encoders.filter.replace
+caddy.logging.encoders.journald
 caddy.logging.encoders.json
 caddy.logging.writers.discard
 caddy.logging.writers.file
@@ -98,12 +99,14 @@ http.reverse_proxy.upstreams.multi
 http.reverse_proxy.upstreams.srv
 pki
 tls
+tls.ca_pool.source.combined
 tls.ca_pool.source.file
 tls.ca_pool.source.http
 tls.ca_pool.source.inline
 tls.ca_pool.source.pki_intermediate
 tls.ca_pool.source.pki_root
 tls.ca_pool.source.storage
+tls.ca_pool.source.system
 tls.certificates.automate
 tls.certificates.load_files
 tls.certificates.load_folders
@@ -128,7 +131,7 @@ tls.permission.http
 tls.stek.distributed
 tls.stek.standard
 
-  Standard modules: 129
+  Standard modules: 132
 
 caddy.fs.s3
 caddy.storage.redis
