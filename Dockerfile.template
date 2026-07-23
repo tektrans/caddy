@@ -6,7 +6,12 @@ RUN xcaddy build \
     --with github.com/caddy-dns/rfc2136 \
     --with github.com/lindenlab/caddy-s3-proxy@850db193cb7f48546439d236f2a6de7bd7436e2e \
     --with github.com/sagikazarmark/caddy-fs-s3 \
-    --with github.com/pberkel/caddy-storage-redis
+    --with github.com/pberkel/caddy-storage-redis \
+    --with github.com/mholt/caddy-l4 \
+    --with github.com/caddyserver/transform-encoder \
+    --with github.com/hslatman/caddy-crowdsec-bouncer/http@main \
+    --with github.com/hslatman/caddy-crowdsec-bouncer/appsec@main \
+    --with github.com/hslatman/caddy-crowdsec-bouncer/layer4@main
 
 FROM docker.io/library/caddy:{{VERSION}}
 

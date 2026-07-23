@@ -133,9 +133,59 @@ tls.stek.standard
 
   Standard modules: 132
 
+admin.api.crowdsec
 caddy.fs.s3
+caddy.listeners.layer4
+caddy.logging.encoders.formatted
+caddy.logging.encoders.transform
 caddy.storage.redis
+crowdsec
 dns.providers.rfc2136
+http.handlers.appsec
+http.handlers.crowdsec
 http.handlers.s3proxy
+layer4
+layer4.handlers.close
+layer4.handlers.echo
+layer4.handlers.postgres_tls
+layer4.handlers.proxy
+layer4.handlers.proxy_protocol
+layer4.handlers.socks5
+layer4.handlers.subroute
+layer4.handlers.tee
+layer4.handlers.throttle
+layer4.handlers.tls
+layer4.handlers.vars
+layer4.matchers.clock
+layer4.matchers.crowdsec
+layer4.matchers.dns
+layer4.matchers.http
+layer4.matchers.local_ip
+layer4.matchers.not
+layer4.matchers.openvpn
+layer4.matchers.postgres
+layer4.matchers.proxy_protocol
+layer4.matchers.quic
+layer4.matchers.rdp
+layer4.matchers.regexp
+layer4.matchers.remote_ip
+layer4.matchers.remote_ip_list
+layer4.matchers.socks4
+layer4.matchers.socks5
+layer4.matchers.ssh
+layer4.matchers.tls
+layer4.matchers.vars
+layer4.matchers.vars_regexp
+layer4.matchers.winbox
+layer4.matchers.wireguard
+layer4.matchers.xmpp
+layer4.proxy.selection_policies.first
+layer4.proxy.selection_policies.ip_hash
+layer4.proxy.selection_policies.least_conn
+layer4.proxy.selection_policies.random
+layer4.proxy.selection_policies.random_choose
+layer4.proxy.selection_policies.round_robin
+layer4.proxy.selection_policies.weighted_round_robin
+tls.handshake_match.alpn
 
-  Non-standard modules: 4
+  Non-standard modules: 54
