@@ -21,6 +21,7 @@ caddy.logging.encoders.filter.query
 caddy.logging.encoders.filter.regexp
 caddy.logging.encoders.filter.rename
 caddy.logging.encoders.filter.replace
+caddy.logging.encoders.filter.set_cookie
 caddy.logging.encoders.journald
 caddy.logging.encoders.json
 caddy.logging.writers.discard
@@ -58,6 +59,7 @@ http.handlers.rewrite
 http.handlers.static_response
 http.handlers.subroute
 http.handlers.templates
+http.handlers.timeouts
 http.handlers.tracing
 http.handlers.vars
 http.ip_sources.static
@@ -75,6 +77,7 @@ http.matchers.protocol
 http.matchers.query
 http.matchers.remote_ip
 http.matchers.tls
+http.matchers.url_pattern
 http.matchers.vars
 http.matchers.vars_regexp
 http.precompressed.br
@@ -131,7 +134,7 @@ tls.permission.http
 tls.stek.distributed
 tls.stek.standard
 
-  Standard modules: 132
+  Standard modules: 135
 
 admin.api.crowdsec
 caddy.fs.s3
