@@ -120,6 +120,7 @@ tls.ech.publishers.dns
 tls.get_certificate.http
 tls.get_certificate.tailscale
 tls.handshake_match.local_ip
+tls.handshake_match.not
 tls.handshake_match.remote_ip
 tls.handshake_match.sni
 tls.handshake_match.sni_regexp
@@ -134,7 +135,7 @@ tls.permission.http
 tls.stek.distributed
 tls.stek.standard
 
-  Standard modules: 135
+  Standard modules: 136
 
 admin.api.crowdsec
 caddy.fs.s3
